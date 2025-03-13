@@ -1,19 +1,19 @@
 import kanchana from '../assests/agent/kanchana.jpg';
 import gallage from '../assests/agent/gallage.jpg';
-import tilak from '../assests/agent/tilak.jpg';
+import tilak from "../assests/agent/tilak.jpg";
 
 const Agents = () => {
   const clients = [
     {
       id: 1,
       img: gallage,
-      title: "Thilak Gallage",
+      title: "Mr. Thilak Gallage",
       description: "Sales Manager",
     },
     {
       id: 2,
       img: kanchana,
-      title: "Kanchana Lakmal",
+      title: "Mr. Kanchana Lakmal",
       description: "Marketing Coordinator",
     },
     {
@@ -40,9 +40,9 @@ const Agents = () => {
               <img
                 src={client.img}
                 alt={client.title}
-                className="w-full h-64 object-cover mb-4 rounded-t-md"
+                className="w-full h-64 object-cover object-[50%_35%] mb-4 rounded-t-md"
               />
-              <h2 className="text-2xl font-semibold mb-2 font-playfair">
+              <h2 className="text-2xl font-semibold mb-2 px-8 font-playfair">
                 {client.title}
               </h2>
               <p className="text-sm text-gray-600 px-4 mb-4 font-playfair">
