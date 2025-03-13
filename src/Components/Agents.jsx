@@ -1,5 +1,6 @@
 import kanchana from '../assests/agent/kanchana.jpg';
 import gallage from '../assests/agent/gallage.jpg';
+import tilak from '../assests/agent/tilak.jpg';
 
 const Agents = () => {
   const clients = [
@@ -15,6 +16,12 @@ const Agents = () => {
       title: "Kanchana Lakmal",
       description: "Marketing Coordinator",
     },
+    {
+      id: 3,
+      img: tilak,
+      title: "Mr. Tilak Gawarammana",
+      description: "Territory Manager (Kandy)",
+    },
   ];
 
   return (
@@ -24,7 +31,7 @@ const Agents = () => {
           Meet our agents
         </h1>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {clients.map((client) => (
             <div
               key={client.id}
