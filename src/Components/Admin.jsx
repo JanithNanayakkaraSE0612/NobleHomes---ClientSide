@@ -94,12 +94,12 @@ function Admin() {
             Login
           </button>
         </form>
-        <p className="text-center mt-4 text-sm text-gray-600">
+        {/* <p className="text-center mt-4 text-sm text-gray-600">
           Don't have an account?{' '}
           <a href="/signup" className="text-blue-500 hover:underline">
             Sign up
           </a>
-        </p>
+        </p> */}
       </div>
     </div>
   );
