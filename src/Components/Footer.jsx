@@ -3,8 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
   faInstagram,
-  faTwitter,
-  faPinterest,
+  faWhatsapp,
 } from "@fortawesome/free-brands-svg-icons";
 
 const Footer = () => {
@@ -17,20 +16,18 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold mb-4">NobleHome Galle</h2>
           <p className="text-sm text-gray-200 mb-4">
-            Discover exceptional living in Galle with NobleHome. Curated properties for every lifestyle.
+            Discover exceptional living in Galle with NobleHome. Curated
+            properties for every lifestyle.
           </p>
           <div className="flex space-x-4 mt-2">
             <a href="#" className="hover:text-blue-500 transition">
               <FontAwesomeIcon icon={faFacebookF} />
             </a>
-            <a href="#" className="hover:text-blue-400 transition">
-              <FontAwesomeIcon icon={faTwitter} />
+            <a href="https://wa.me/94778354380" target="_blank"   rel="noopener noreferrer" className="hover:text-blue-400 transition">
+              <FontAwesomeIcon icon={faWhatsapp} />
             </a>
             <a href="#" className="hover:text-pink-500 transition">
               <FontAwesomeIcon icon={faInstagram} />
-            </a>
-            <a href="#" className="hover:text-red-600 transition">
-              <FontAwesomeIcon icon={faPinterest} />
             </a>
           </div>
         </div>
@@ -40,27 +37,43 @@ const Footer = () => {
           <h2 className="text-2xl font-bold mb-4">Quick Links</h2>
           <ul className="space-y-2 text-sm">
             <li>
-              <a href="/" className="hover:underline">Home</a>
+              <a href="/" className="hover:underline">
+                Home
+              </a>
             </li>
             <li>
-              <a href="/about" className="hover:underline">About</a>
+              <a href="/about" className="hover:underline">
+                About
+              </a>
             </li>
             <li>
               <button
-                onClick={() => setIsPropertyDropdownOpen(!isPropertyDropdownOpen)}
+                onClick={() =>
+                  setIsPropertyDropdownOpen(!isPropertyDropdownOpen)
+                }
                 className="hover:underline cursor-pointer"
               >
                 Property
               </button>
               {isPropertyDropdownOpen && (
                 <ul className="ml-4 mt-2 space-y-1">
-                  <li><a href="/land" className="hover:underline">Land</a></li>
-                  <li><a href="/house" className="hover:underline">House</a></li>
+                  <li>
+                    <a href="/land" className="hover:underline">
+                      Land
+                    </a>
+                  </li>
+                  <li>
+                    <a href="/house" className="hover:underline">
+                      House
+                    </a>
+                  </li>
                 </ul>
               )}
             </li>
             <li>
-              <a href="/contact" className="hover:underline">Contact</a>
+              <a href="/contact" className="hover:underline">
+                Contact
+              </a>
             </li>
           </ul>
         </div>
@@ -73,7 +86,10 @@ const Footer = () => {
           </p>
           <p className="text-sm mt-2">
             <strong>Email:</strong>{" "}
-            <a href="mailto:noblehomegalle15@gmail.com" className="hover:underline">
+            <a
+              href="mailto:noblehomegalle15@gmail.com"
+              className="hover:underline"
+            >
               noblehomegalle15@gmail.com
             </a>
           </p>
@@ -99,7 +115,8 @@ const Footer = () => {
       </div>
 
       <div className="text-center text-gray-200 mt-12 pb-6 border-t border-white border-opacity-20 text-sm">
-        &copy; {new Date().getFullYear()} NobleHome Galle. Developed by LegionCode IT Solutions.
+        &copy; {new Date().getFullYear()} NobleHome Galle. Developed by
+        LegionCode IT Solutions.
       </div>
     </footer>
   );
