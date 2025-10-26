@@ -16,7 +16,7 @@ const Agents = () => {
       name: "Mr. Thilak Gallage",
       position: "Sales Manager",
       description:
-        "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account.",
+      "Mr. Thilak Gallage leads our sales operations in Sri Lanka with over 10 years of experience, ensuring clients receive personalized solutions and exceptional support for their business needs.",
       reverse: false,
     },
     {
@@ -25,7 +25,7 @@ const Agents = () => {
       name: "Mr. Kanchana Lakmal",
       position: "Marketing Coordinator",
       description:
-        "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account.",
+      "With extensive knowledge of local markets, Mr. Kanchana Lakmal develops effective marketing strategies tailored to Sri Lankan clients, driving growth and brand awareness across the region.",
       reverse: true,
     },
     {
@@ -34,7 +34,7 @@ const Agents = () => {
       name: "Mr. Tilak Gawarammana",
       position: "Territory Manager (Kandy)",
       description:
-        "It’s easier to reach your savings goals when you have the right savings account. Take a look and find the right one for you. It’s easier to reach your savings goals when you have the right savings account.",
+      "Mr. Tilak Gawarammana manages our Kandy territory operations, ensuring seamless coordination, timely service, and strong relationships with clients across the central region of Sri Lanka.",
       reverse: false,
     },
   ];
