@@ -1,7 +1,12 @@
-import kanchana from '../assests/agent/kanchana.jpg';
-import gallage from '../assests/agent/gallage.jpg';
+import kanchana from "../assests/agent/kanchana.jpg";
+import gallage from "../assests/agent/gallage.jpg";
 import tilak from "../assests/agent/tilak.jpg";
-import { FaFacebookF, FaLinkedinIn, FaTwitter, FaBehance } from 'react-icons/fa';
+import {
+  FaFacebookF,
+  FaLinkedinIn,
+  FaTwitter,
+  FaBehance,
+} from "react-icons/fa";
 
 const Agents = () => {
   const clients = [
@@ -39,9 +44,13 @@ const Agents = () => {
       <div className="container mx-auto px-6">
         {/* Heading */}
         <div className="text-center max-w-2xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-3">Our Experts Team</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-3">
+            Our Experts Team
+          </h2>
           <p className="text-gray-600">
-            Assumenda non repellendus distinctio nihil dicta sapiente, quibusdam maiores, illum at qui.
+            Our dedicated team of experts in Sri Lanka brings years of
+            experience in sales, marketing, and territory management, ensuring
+            personalized solutions and exceptional service for every client.
           </p>
         </div>
 
@@ -51,7 +60,7 @@ const Agents = () => {
             <div
               key={client.id}
               className={`flex flex-col md:flex-row items-center md:justify-between gap-8 ${
-                client.reverse ? 'md:flex-row-reverse' : ''
+                client.reverse ? "md:flex-row-reverse" : ""
               }`}
             >
               {/* Image */}
@@ -66,7 +75,9 @@ const Agents = () => {
               {/* Content */}
               <div className="md:w-6/12 w-full mt-4 md:mt-0">
                 <h4 className="text-2xl font-semibold mb-2">{client.name}</h4>
-                <p className="text-indigo-600 font-medium mb-4">{client.position}</p>
+                <p className="text-indigo-600 font-medium mb-4">
+                  {client.position}
+                </p>
                 <p className="text-gray-500 mb-4">{client.description}</p>
 
                 {/* Social Links */}
