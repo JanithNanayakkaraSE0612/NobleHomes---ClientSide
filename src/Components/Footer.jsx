@@ -17,7 +17,6 @@ const Footer = () => {
   return (
     <div className="mt-[60px] bg-[#6C58CE] py-10">
       <div className="max-w-screen-xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
-        
         {/* NobleHome Section */}
         <div className="text-left text-white">
           <h2 className="font-moul text-2xl sm:text-3xl font-bold tracking-tight">
@@ -35,7 +34,7 @@ const Footer = () => {
             your dream property with NobleHome Galle, where your ideal space
             awaits.
           </p>
-          
+
           <div className="flex space-x-4 mt-6">
             <a
               href="https://www.facebook.com"
@@ -79,12 +78,18 @@ const Footer = () => {
           </h2>
           <ul className="mt-6 space-y-2 text-sm sm:text-base">
             <li>
-              <a href="/" className="hover:underline transition-colors duration-300">
+              <a
+                href="/"
+                className="hover:underline transition-colors duration-300"
+              >
                 Home
               </a>
             </li>
             <li>
-              <a href="/about" className="hover:underline transition-colors duration-300">
+              <a
+                href="/about"
+                className="hover:underline transition-colors duration-300"
+              >
                 About
               </a>
             </li>
@@ -98,12 +103,18 @@ const Footer = () => {
               {isPropertyDropdownOpen && (
                 <ul className="ml-4 mt-2 space-y-1">
                   <li>
-                    <a href="/land" className="text-white hover:underline transition-colors duration-300">
+                    <a
+                      href="/land"
+                      className="text-white hover:underline transition-colors duration-300"
+                    >
                       Land
                     </a>
                   </li>
                   <li>
-                    <a href="/house" className="text-white hover:underline transition-colors duration-300">
+                    <a
+                      href="/house"
+                      className="text-white hover:underline transition-colors duration-300"
+                    >
                       House
                     </a>
                   </li>
@@ -111,7 +122,10 @@ const Footer = () => {
               )}
             </li>
             <li>
-              <a href="/contact" className="hover:underline transition-colors duration-300">
+              <a
+                href="/contact"
+                className="hover:underline transition-colors duration-300"
+              >
                 Contact
               </a>
             </li>
@@ -139,12 +153,14 @@ const Footer = () => {
             </a>
           </p>
         </div>
-
       </div>
 
       {/* Footer Bottom */}
       <div className="text-center text-white mt-10 pt-6 border-t border-white border-opacity-20 text-sm">
-        <p>&copy; {new Date().getFullYear()} NobleHome Galle. All rights reserved.</p>
+        <p>
+          &copy; {new Date().getFullYear()} © 2025 NobleHome Galle. All rights
+          reserved. Developed and Powered by LegionCode IT Solutions.
+        </p>
       </div>
     </div>
   );
